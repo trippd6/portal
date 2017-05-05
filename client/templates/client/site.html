@@ -1,0 +1,11 @@
+{% extends "client/layout.html" %}
+{% block content %}
+
+Site Id: {{ id }}<br>
+Site Name: {{ site.name }}<br>
+Currently Hosted At: {{ hosted_dc }}<br>
+<a href=?swap=1>Swap to other datacenter!</a> (Danger! This will fail your site over!)
+
+{% endblock content %}
+
+

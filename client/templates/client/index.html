@@ -1,0 +1,12 @@
+{% extends "client/layout.html" %}
+{% load django_tables2 %}
+
+{% block content %}
+
+{% for site in site_list %}
+{{ site.account }} <a href="/client/site/{{ site.id }}/">{{ site.name }}</a> <br>
+{% endfor %}
+
+{#% render_table site_list %#}
+
+{% endblock content %}
